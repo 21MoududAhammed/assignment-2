@@ -112,6 +112,26 @@ nav{
 .golden-text{
     color: #FF900E;
 }
+
+
+/* some facts section design  */
+.some-facts-section{
+    margin-top: 85px;
+    padding-left: 240px;
+}
+.some-facts-container h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    line-height: 0px;
+}
+.some-facts-container p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+
 /* navbar responsive for mobile view
 ------------------- */
 @media screen and (max-width:576px){
@@ -119,6 +139,9 @@ nav{
         margin-top: 20px;
     }
     /* for nav bar  */
+    header{
+        height: 600px;
+    }
     nav{
         display: flex; 
         flex-direction: column;
@@ -150,6 +173,7 @@ nav{
         padding: 0px 50px;
     }
     /* banner design  */
+    
     .banner{
         /* margin: 50px 0px 45px 0px; */
         margin: 40px 0px 45px 0px;
@@ -159,9 +183,32 @@ nav{
     }
     .banner img{
         width: 100%;
-        /* padding: 10px; */
+    }
+
+
+    /* features section  */
+    .features-images-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        justify-items: center;
+    
+    }
+    
+    .features-container{
+        gap: 30px;
+    }
+    .about-feature-container h2{
+        font-size: 35px;
+    }
+    .features-container{
+        flex-direction: column;
+    }
+    .about-feature-container{
+        width: 300px;
     }
 }
+
+
 /* navbar responsive for tab view  
 ---------------------*/
 @media screen and (min-width:578px) and (max-width:992px){
