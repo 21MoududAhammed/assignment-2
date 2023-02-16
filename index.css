@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+.hidden{
+    display: none;
+}
 .btn-primary{
     padding: 20px 25px;
     color:#FFFFFF;
@@ -139,10 +142,15 @@ nav{
     text-align: start;
     line-height: 15px;
 }
-.achievements-container{
+/* .achievements-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+} */
+.achievements-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
 }
 .achievement{
     height: 241px;
@@ -153,6 +161,10 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.achievement:hover{
+    transform: scale(1.2);
+    transition:ease 2s;
 }
 .achievement img{
     height: 24px;
@@ -243,6 +255,12 @@ nav{
         width: 300px;
     }
     
+    /* for some facts and .achievements  */
+    .achievements-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+    
    
     
 }
@@ -282,6 +300,13 @@ nav{
     /* for features  */
     .features-container{
         flex-direction: column;
+    }
+
+    /* for some facts and .achievements  */
+    .achievements-container{
+        grid-template-columns: repeat(2,1fr);
+        /* justify-items: center; */
+        gap: 20px;
     }
     
     
