@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+}
+.btn-primary{
+    padding: 20px 25px;
+    color:#FFFFFF;
+    font-size: 20px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+
+}
+header{
+    background-color:rgba(255, 144, 14, 0.1) ;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 230px;
+
+}
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.nav-menu ul li{
+    list-style: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* bio container design 
+---------- */
+.bio-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.bio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bio{
+    height: 225px;
+    width: 862px;
+}
+.bio h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+}
+.bio p{
+    text-align: center;
+    color:#727272;
+    font-size: 16px;
+}
+/* banner design  */
+.banner{
+    margin: 50px 0px 45px 0px;
+    height: 700px;
+    width: 1440px;
+}
+.banner img{
+    width: 100%;
+}
+/* navbar responsive for mobile view
+------------------- */
+@media screen and (max-width:576px){
+    .btn-primary{
+        margin-top: 20px;
+    }
+    /* for nav bar  */
+    nav{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    
+    }
+    .nav-menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .logo-name h1{
+        margin-bottom: 0px;
+    }
+    /* for bio container  */
+    .bio{
+        height: 225px;
+        width: 462px;
+        padding: 0 15px;
+    }
+    .bio h1{
+        font-size: 34px;
+        line-height: 10px;
+    }
+    .bio p{
+        margin: 0px;
+        padding: 0px 50px;
+    }
+    /* banner design  */
+    .banner{
+        /* margin: 50px 0px 45px 0px; */
+        margin: 40px 0px 45px 0px;
+        /* padding: 30px; */
+        height: 300px;
+        width: 350px;
+    }
+    .banner img{
+        width: 100%;
+        /* padding: 10px; */
+    }
+}
+/* navbar responsive for tab view  
+---------------------*/
+@media screen and (min-width:578px) and (max-width:992px){
+    /* for navbar  */
+    body{
+        background-color: aqua;
+    }
+    nav{
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+    }
+    .nav-menu ul {
+        gap: 20px;
+    }
+    /* for bio container  */
+    .bio{
+        height: 225px;
+        width: 560px;
+    }
+    /* .btn-primary{
+        margin-top: 32px;
+    } */
+    
+}
