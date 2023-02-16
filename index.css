@@ -206,6 +206,17 @@ nav{
     height: 50px;
     width: 165px;
 }
+footer{
+    height: 100px;
+    text-align: center;
+    color:#424242 ;
+    background-color: #FFF4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
 
 
 /* navbar responsive for mobile view
