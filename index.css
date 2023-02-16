@@ -142,11 +142,6 @@ nav{
     text-align: start;
     line-height: 15px;
 }
-/* .achievements-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
 .achievements-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -177,6 +172,39 @@ nav{
 .achievement p{
     text-align: center;
     line-height: 5px;
+}
+
+/* sponsors part  */
+
+.sponsors-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.about-sponsors{
+    text-align: center;
+    line-height: 20px;
+}
+.about-sponsors h1{
+    font-size: 45px;
+    font-weight: 700px;
+    color: #131313;
+}
+.about-sponsors p{
+    font-size: 16px;
+    color: #727272;
+}
+.sponsors-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 155px;
+    margin-top: 30px;
+}
+.sponsors-container img{
+    height: 50px;
+    width: 165px;
 }
 
 
