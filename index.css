@@ -116,9 +116,16 @@ nav{
 
 /* some facts section design  */
 .some-facts-section{
-    margin-top: 85px;
-    padding-left: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
+    /* align-items:self-start; */
 }
+.some-facts-container{
+    padding-left: 4rem;
+}
+
 .some-facts-container h1{
     font-size: 45px;
     font-weight: 700;
@@ -129,6 +136,35 @@ nav{
     font-size: 16px;
     font-weight: 400;
     color: #727272;
+    text-align: start;
+    line-height: 15px;
+}
+.achievements-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.achievement{
+    height: 241px;
+    width: 241px;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.achievement img{
+    height: 24px;
+    width: 24px;
+}
+.achievement h1{
+    text-align: center;
+    line-height: 5px;
+}
+.achievement p{
+    text-align: center;
+    line-height: 5px;
 }
 
 
@@ -206,6 +242,9 @@ nav{
     .about-feature-container{
         width: 300px;
     }
+    
+   
+    
 }
 
 
@@ -230,8 +269,20 @@ nav{
         height: 225px;
         width: 560px;
     }
-    /* .btn-primary{
-        margin-top: 32px;
-    } */
+    /* for banner  */
+    .banner{
+        margin: 40px 0px 45px 0px;
+        height: 300px;
+        width: 560px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    
+    /* for features  */
+    .features-container{
+        flex-direction: column;
+    }
+    
     
 }
